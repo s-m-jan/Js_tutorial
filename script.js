@@ -1,24 +1,20 @@
-walk()
-// run01();
-// run02();
-// move();
-//function declaration
+// function sum(a,b){
+//     console.log(arguments)
+//     return a + b;
+// }
 
-function walk(){
-    console.log("walk")
+function sum(a,b){
+    console.log(arguments);
+    let total = 0;
+    for(let element of arguments){
+        total += element;
+    };
+    return total;
 }
 
-//function expression (anonymous & names)
- 
-let run01 = function(){
-    console.log("run01")
-};
 
-let run02 = function run(){
-    console.log("run02")
-};
 
-run02();
-run01();
-let move = run01;
-move();
+console.log(sum(3,4,7,3,8,99));
+
+
+
