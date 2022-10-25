@@ -1,20 +1,17 @@
-// function sum(a,b){
-//     console.log(arguments)
-//     return a + b;
-// }
+let numbers = [2,3,4,8,9,20,4,7];
 
-function sum(a,b){
-    console.log(arguments);
-    let total = 0;
-    for(let element of arguments){
-        total += element;
-    };
-    return total;
-}
+let sum = 0;
 
+numbers.forEach(item => sum+= item);
+console.log(numbers)
 
+console.log(sum)
 
-console.log(sum(3,4,7,3,8,99));
+// const total = numbers.reduce(function(accumulator, currentValue){
+//     accumulator += currentValue;
+// }, 0)
+
+// console.log(total)
 
 
 
